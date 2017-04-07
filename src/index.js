@@ -85,3 +85,5 @@ let readRgb = function() {
 if(typeof document !== "object") { // nodejs code
     module.exports = readRgb;
 }
+
+// slack test
