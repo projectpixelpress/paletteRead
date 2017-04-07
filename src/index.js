@@ -17,7 +17,7 @@ var obj = {
     value: null
 };
 
-let readRgb = function() {
+let paletteread = function() {
     const getPixel = function(imgData, index) {
         let i = index*4, d = imgData.data;
         return {
@@ -83,7 +83,7 @@ let readRgb = function() {
 }
 
 if(typeof document !== "object") { // nodejs code
-    module.exports = readRgb;
+    module.exports = paletteread;
 }
 
 // slack test
